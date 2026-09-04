@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Potato Disease Detection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🥔 Potato Disease Detection</h1>
+
+        <p>
+            Upload a potato leaf image to detect the disease.
+        </p>
+
+        <!-- Image Upload -->
+        <input
+            type="file"
+            id="imageInput"
+            accept="image/*"
+        >
+
+        <!-- Image Preview -->
+        <div id="previewContainer">
+
+            <img
+                id="imagePreview"
+                src=""
+                alt="Potato Leaf Preview"
+            >
+
+        </div>
+
+        <!-- Predict Button -->
+        <button id="predictButton">
+            Predict Disease
+        </button>
+
+
+        <!-- Prediction Result -->
+        <div id="result" class="result-card">
+
+            <h2>Prediction Result</h2>
+
+            <p id="disease"></p>
+
+            <p id="confidenceText"></p>
+
+            <!-- Confidence Bar -->
+            <div class="confidence-container">
+
+                <div id="confidenceBar"></div>
+
+            </div>
+
+            <!-- Reset Button -->
+            <button id="resetButton">
+                Predict Again
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
